@@ -1,0 +1,67 @@
+POST localhost:8080/signUp
+Content-Type: application/json
+
+{
+  "firstName": "user1",
+  "lastName": "user1",
+  "email": "user1@mail.com",
+  "password": "qwerty1"
+}
+
+##############################
+
+POST localhost:8080/signUp
+Content-Type: application/json
+
+{
+  "firstName": "user2",
+  "lastName": "user2",
+  "email": "user2@mail.com",
+  "password": "qwerty2"
+}
+
+
+##############################
+
+POST localhost:8080/signIn
+Content-Type: application/json
+
+{
+  "email": "user2@mail.com",
+  "password": "qwerty2"
+}
+
+##############################
+
+POST localhost:8080/signIn
+Content-Type: application/json
+
+{
+  "email": "user1@mail.com",
+  "password": "qwerty2"
+}
+
+##############################
+
+POST localhost:8080/signOut
+
+##############################
+
+GET localhost:8080/session
+
+##############################
+
+GET localhost:8080/chats
+
+##############################
+
+POST localhost:8080/chats
+Content-Type: application/json
+
+{
+  "receiverId": 10
+}
+
+###
+
+GET localhost:8080/chats/1
